@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c69145922f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Penetration Tester | Developer</p>
+            <h1>Hello, I'm <span>Karun Kumar Saketi</span><br> from India</h1>
+        </div>
+    </div>
+</div>
+<!------------------------------------About Section------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/user.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> something about me description I'm a Penetration tester in schneider eletric</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Penetration Tester</span><br>Web Application Testing<br>Vulnerablity Assessment<br>Infrastructure Scanning<br>API Testing<br>Thick Client Testing<br>Mobile Application Testing</li>
+                        <li><span>Web Developer</span><br>HTML, CSS<br>Django<br>React JS<br>Spring Boot<br>MySQl<br>Oracle</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Jio Private Limited</span><br>I worked as an intern at Jio Private Limited Company for six months, from August-1-2022, to January-31-2023. During my internship, I worked with the Vue.js framework and contributed as a Java Backend Developer (JBDL).</li>
+                        <li><span>Schneider Electric (Current)</span><br>I started my career at Schneider Electric Company as an intern on February-20-2023, and continued in this role until September-8-2023. After completing my internship, I was converted to a full-time employee and am currently working as a Penetration Tester at Schneider Electric Company.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-2023</span><br>I have completed my B.Tech degree at KL University with CGPA of 8.7</li>
+                        <li><span>2017-2019</span><br>I completed my Intermediate at Sri Chaitanya Junior College with a GPA of 9.1</li>
+                        <li><span>2017</span><br>I completed my schooling at Ravindra Bharathi High School with a GPA of 9.3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------------------Service Section------------------------------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Penetration Tester</h2>
+                <p>As a Penetration Tester, I conduct penetration testing on various applications to identify security vulnerabilities and help individuals and organizations strengthen their defenses.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Developer</h2>
+                <p>As a Web Developer, I worked on various frameworks across different projects during my college years. I have experience with Django, Flask, and Spring Boot frameworks.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------------------Projects Section------------------------------->
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <h2>Web Applications Pentest</h2>
+                <p>Performed security testing on a live web application, identified vulnerabilities, and provided mitigation recommendation.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Infrastructure Scanning</h2>
+                <p>I developed a Bidding System project using the Flask framework. The application allows users to place bids on products, with the highest bidder winning the product. Users can also mark upcoming bids for future reference and receive notifications about bidding events. The admin can monitor bids, update bid slots, and manage product details. For this project, I used Python for the frontend and Oracle as the database.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Mobile Application Pentest</h2>
+                <p>I developed a cost estimation website using the Spring Boot framework. This application is designed for users who are starting a business or organizing events. Users can input their requirements and the number of people needed, and the application will generate a cost estimation based on their criteria. This helps users get a clear idea of their potential business expenses. For the frontend, I used Java, and for the database, I implemented MySQL.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>E-Commerce Website</h2>
+                <p>I developed an e-commerce website using the Angular framework. The website allows users to order products and add items to the cart for future purchases. Admins can monitor and update product details within the application. For the frontend, I used HTML and CSS, and for the database, I implemented MongoDB.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Online Bidding System</h2>
+                <p>I developed a Bidding System project using the Flask framework. The application allows users to place bids on products, with the highest bidder winning the product. Users can also mark upcoming bids for future reference and receive notifications about bidding events. The admin can monitor bids, update bid slots, and manage product details. For this project, I used Python for the frontend and Oracle as the database.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Cost Estimation System</h2>
+                <p>I developed a cost estimation website using the Spring Boot framework. This application is designed for users who are starting a business or organizing events. Users can input their requirements and the number of people needed, and the application will generate a cost estimation based on their criteria. This helps users get a clear idea of their potential business expenses. For the frontend, I used Java, and for the database, I implemented MySQL.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------------------Portfolio Section------------------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/pentest.jpg">
+                <div class="layer">
+                    <h3>Penetartion Testing</h3>
+                    <p>Perform pentesting on web applications</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/va.jpeg">
+                <div class="layer">
+                    <h3>Infrastructure Scanning</h3>
+                    <p>Perform Infra scan on the Servers</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/webdevlopment.jpeg">
+                <div class="layer">
+                    <h3>Web Application Developement</h3>
+                    <p>Implement web application using different frameworks</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!------------------------------------Contact Section------------------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-square-envelope"></i>saketikarunkumar@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+91-9515165652</p>
+                <div class="social-icons">
+                    <a href="https://github.com/KarunKumar-Saketi"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/saketikarunkumar/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="Images/resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright Karun Kumar Saketi. Made with <i class="fas fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
